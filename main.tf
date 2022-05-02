@@ -4,6 +4,7 @@ backend "s3" {
     key            = "terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraformtesting-dynamoDB"
+    workspace_key_prefix = "tf-state"
   }
 }
 
